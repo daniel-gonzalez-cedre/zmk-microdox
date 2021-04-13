@@ -8,27 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/// {
-//    combos {
-//        compatible = "zmk,combos";
-//        combo_ctrl {
-//            timeout-ms = <50>;
-//            key-positions = <32 14>;
-//            bindings = <&kp LCTRL>;
-//        };
-//        combo_ctrl_thumb {
-//            timeout-ms = <50>;
-//            key-positions = <31 32>;
-//            bindings = <&kp LCTRL>;
-//        };
-//        combo_caps {
-//            timeout-ms = <50>;
-//            key-positions = <33 34>;
-//            bindings = <&kp CAPS>;
-//        };
-//    };
-//};
-
 / {
         keymap {
                 compatible = "zmk,keymap";
