@@ -54,15 +54,15 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ESC | SCT |  CT |      |     ||||| TAB |     |     |     | DEL  |
-// | TAB |VOL- |VOL+ | CTRL | NUM |||||  ←  |  ↓  |  ↑  |  →  | BKSP |
-// |     |     |     |      |     |||||     | RET |     |     |      |
-//             |     |      | SHFT||||| SPC |     |     |
+// | ESC | SCT |  CT |     |     ||||| TAB |     |     |     | DEL  |
+// | TAB |     |     | CTRL| NUM |||||  ←  |  ↓  |  ↑  |  →  | BKSP |
+// |     |     |     |     |     |||||     | RET |     |     |      |
+//             |     |     | SHFT||||| SPC | CTRL|     |
                         bindings = <
-   &kp ESC      &kp LS(LC(TAB)) &kp LC(TAB)  &trans    &trans     &kp TAB   &trans   &trans   &trans    &kp DEL
-   &kp TAB      &trans          &trans       &kp LCTRL &mo 3      &kp LEFT  &kp DOWN &kp UP   &kp RIGHT &kp BSPC
-   &trans       &trans          &trans       &trans    &trans     &trans    &kp RET  &trans   &trans    &trans
-                                &trans       &trans    &kp LSHFT  &kp SPACE &none    &kp BSPC
+   &kp ESC      &kp LS(LC(TAB)) &kp LC(TAB)  &trans    &trans     &kp TAB   &trans    &trans   &trans    &kp DEL
+   &kp TAB      &trans          &trans       &kp LCTRL &mo 3      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp BSPC
+   &trans       &trans          &trans       &trans    &trans     &trans    &kp RET   &trans   &trans    &trans
+                                &trans       &trans    &kp LSHFT  &kp SPACE &kp LCTRL &kp BSPC
                         >;
                 };
 
