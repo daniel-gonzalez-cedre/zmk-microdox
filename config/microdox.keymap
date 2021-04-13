@@ -87,10 +87,10 @@
 // | BOOT|     |     |     |     |||||     |  1  |  2  |  3  |     |
 //             |     |     |     |||||  0  |  .  |  ,  |
                         bindings = <
-   &none        &kp LG(LS(3)) &kp LG(LS(4)) &none  &none     &none  &kp N7  &kp N8 &kp N9 &none
-   &bt BT_CLR   &none         &none         &none  &none     &none  &kp N4  &kp N5 &kp N6 &none
-   &bootloader  &none         &none         &none  &none     &none  &kp N1  &kp N2 &kp N3 &none
-                 &trans &trans &trans    &kp N0 &kp DOT &kp COMMA
+   &none        &kp LG(LS(N3)) &kp LG(LS(N4)) &none  &none     &none  &kp N7  &kp N8 &kp N9 &none
+   &bt BT_CLR   &none          &none          &none  &none     &none  &kp N4  &kp N5 &kp N6 &none
+   &bootloader  &none          &none          &none  &none     &none  &kp N1  &kp N2 &kp N3 &none
+                                       &trans &trans &trans    &kp N0 &kp DOT &kp COMMA
                         >;
                 };
         };
