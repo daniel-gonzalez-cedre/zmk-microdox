@@ -34,7 +34,7 @@
         combo_lwr {
             timeout-ms = <50>;
             key-positions = <30 31>;
-            bindings = <&mo 2>;
+            bindings = <&mo 1>;
         };
         combo_num {
             timeout-ms = <50>;
