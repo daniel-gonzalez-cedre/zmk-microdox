@@ -11,10 +11,10 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_tab {
+        combo_ctrl {
             timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
+            key-positions = <31 13>;
+            bindings = <&kp LCTRL>;
         };
         combo_ctrl_sym {
             timeout-ms = <50>;
@@ -31,16 +31,6 @@
             key-positions = <32 33>;
             bindings = <&kp CAPS>;
         };
-        combo_lwr {
-            timeout-ms = <50>;
-            key-positions = <30 31>;
-            bindings = <&mo 1>;
-        };
-        combo_num {
-            timeout-ms = <50>;
-            key-positions = <31 32>;
-            bindings = <&mo 3>;
-        };
     };
 };
 
@@ -52,13 +42,13 @@
 // -----------------------------------------------------------------------------------------
 // |  Q  |  W  |  E  |  R  |  T  |||||  Y  |  U  |  I  |  O  |  P  |
 // |  A  |  S  |  D  |  F  |  G  |||||  H  |  J  |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B  |||||  N  |  M  |  ,  |  .  | RET |
-//             | GUI | CTRL| SHFT||||| SPC | SYM | BSP |
+// |  Z  |  X  |  C  |  V  |  B  |||||  N  |  M  |  ,  |  .  |  /  |
+//             | GUI | LWR | SHFT||||| SPC | SYM | BSP |
                         bindings = <
    &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
-   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp RET
-          &kp LGUI &kp LCTRL &kp LSHFT &kp SPACE &mo 2 &kp BSPC
+   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
+          &kp LGUI &mo 1 &kp LSHFT &kp SPACE &mo 2 &kp BSPC
                         >;
                 };
 
@@ -66,12 +56,12 @@
 // -----------------------------------------------------------------------------------------
 // | ESC | SCT |  CT |     |     ||||| TAB |     |     |     | DEL  |
 // | TAB |     |     | CTRL| NUM |||||  ←  |  ↓  |  ↑  |  →  | BKSP |
-// | RET |     |     |     |     |||||     | RET |     |     |      |
+// |     |     |     |     |     |||||     | RET |     |     |      |
 //             |     |     | SHFT||||| SPC | CTRL|     |
                         bindings = <
    &kp ESC      &kp LS(LC(TAB)) &kp LC(TAB)  &trans    &trans     &kp TAB   &trans    &trans   &trans    &kp DEL
    &kp TAB      &trans          &trans       &kp LCTRL &mo 3      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp BSPC
-   &kp RET      &trans          &trans       &trans    &trans     &trans    &kp RET   &trans   &trans    &trans
+   &trans       &trans          &trans       &trans    &trans     &trans    &kp RET   &trans   &trans    &trans
                                 &trans       &trans    &kp LSHFT  &kp SPACE &kp LCTRL &kp BSPC
                         >;
                 };
@@ -80,12 +70,12 @@
 // -----------------------------------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |||||  ^  |  &  |  *  |  =  |  \  |
 // |  {  |  (  |  )  |  }  |  ~  |||||  ←  |  ↓  |  ↑  |  →  |  '' |
-// |     |  [  |  ]  |     |     |||||     |  -  |  +  |  `  |  /  |
+// |     |  [  |  ]  |     |     |||||     |  -  |  +  |  `  | RET |
 //             | GUI |     | SHF ||||| SPC |     | ALT |
                         bindings = <
    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp EQUAL &kp BSLH
-   &kp LBRC  &kp LPAR  &kp LPAR  &kp RPAR  &kp TILDE   &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &kp SQT
-   &trans    &kp LBKT  &kp RBKT  &trans    &trans      &none     &kp MINUS &kp PLUS        &kp GRAVE &kp FSLH
+   &kp LBRC  &kp LPAR  &kp RPAR  &kp RBRC  &kp TILDE   &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &kp SQT
+   &trans    &kp LBKT  &kp RBKT  &trans    &trans      &none     &kp MINUS &kp PLUS        &kp GRAVE &kp RET
                        &kp LGUI  &none     &kp LSHFT   &kp SPACE &trans    &kp RALT
                         >;
                 };
