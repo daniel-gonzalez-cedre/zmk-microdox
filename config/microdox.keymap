@@ -12,13 +12,13 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <25>;
-            key-positions = <0 1>;
+            timeout-ms = <50>;
+            key-positions = <0 3>;
             bindings = <&kp ESC>;
         };
         combo_tab {
-            timeout-ms = <25>;
-            key-positions = <10 11>;
+            timeout-ms = <50>;
+            key-positions = <10 13>;
             bindings = <&kp TAB>;
         };
         combo_ctrl_sym {
