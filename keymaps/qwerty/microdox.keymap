@@ -13,12 +13,12 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <0 1>;
+            key-positions = <0 3>;
             bindings = <&kp ESC>;
         };
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <10 13>;
             bindings = <&kp TAB>;
         };
         combo_ctrl_sym {
@@ -84,13 +84,13 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |||||  ^  |  &  |  *  |  =  |  \  |
-// |  {  |  (  |  )  |  }  |  ~  |||||  ←  |  ↓  |  ↑  |  →  |  '' |
-// |     |  [  |  ]  |     |     |||||     |  -  |  +  |  `  |  /  |
+// | TAB |  (  |  )  |     |  ~  |||||  ←  |  ↓  |  ↑  |  →  |  '' |
+// |  {  |  [  |  ]  |  }  |     |||||     |  -  |  +  |  `  |  /  |
 //             | GUI |     | SHF ||||| SPC |     | ALT |
                         bindings = <
    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp EQUAL &kp BSLH
-   &kp LBRC  &kp LPAR  &kp LPAR  &kp RPAR  &kp TILDE   &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &kp SQT
-   &trans    &kp LBKT  &kp RBKT  &trans    &trans      &none     &kp MINUS &kp PLUS        &kp GRAVE &kp FSLH
+   &kp TAB   &kp LPAR  &kp RPAR  &trans    &kp TILDE   &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &kp SQT
+   &kp LBRC  &kp LBKT  &kp RBKT  &kp RBRC  &trans      &none     &kp MINUS &kp PLUS        &kp GRAVE &kp FSLH
                        &kp LGUI  &none     &kp LSHFT   &kp SPACE &trans    &kp RALT
                         >;
                 };
