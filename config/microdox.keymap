@@ -39,7 +39,7 @@
         combo_num {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&to 3>;
+            bindings = <&tg 3>;
         };
     };
 };
