@@ -18,13 +18,8 @@
         };
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <10 13>;
+            key-positions = <12 13>;
             bindings = <&kp TAB>;
-        };
-        combo_ctrl_sym {
-            timeout-ms = <50>;
-            key-positions = <31 34>;
-            bindings = <&kp LCTRL>;
         };
         combo_alt_sym {
             timeout-ms = <50>;
@@ -33,7 +28,7 @@
         };
         combo_caps {
             timeout-ms = <50>;
-            key-positions = <32 33>;
+            key-positions = <31 34>;
             bindings = <&kp CAPS>;
         };
         combo_lwr {
@@ -44,7 +39,7 @@
         combo_num {
             timeout-ms = <50>;
             key-positions = <31 32>;
-            bindings = <&mo 3>;
+            bindings = <&to 3>;
         };
     };
 };
@@ -99,13 +94,13 @@
 // -----------------------------------------------------------------------------------------
 // |     | SC 3| SC 4|     |     |||||     |  7  |  8  |  9  |     |
 // |BTCLR|     |     |     |     |||||     |  4  |  5  |  6  |     |
-// | BOOT|     |     |     |     |||||     |  1  |  2  |  3  |     |
-//             |     |     |     |||||  0  |  .  |  ,  |
+// | BOOT|     |     |     |     |||||  ,  |  1  |  2  |  3  |     |
+//             |     |     |     |||||  .  |  0  | BKSP|
                         bindings = <
-   &none        &kp LG(LS(N3)) &kp LG(LS(N4)) &none  &none     &none  &kp N7  &kp N8 &kp N9 &none
-   &bt BT_CLR   &none          &none          &none  &none     &none  &kp N4  &kp N5 &kp N6 &none
-   &bootloader  &none          &none          &none  &none     &none  &kp N1  &kp N2 &kp N3 &none
-                                       &trans &trans &trans    &kp N0 &kp DOT &kp COMMA
+   &none        &kp LG(LS(N3)) &kp LG(LS(N4)) &none  &none     &none     &kp N7  &kp N8 &kp N9 &none
+   &bt BT_CLR   &none          &none          &none  &none     &none     &kp N4  &kp N5 &kp N6 &none
+   &bootloader  &none          &none          &none  &none     &kp COMMA &kp N1  &kp N2 &kp N3 &none
+                                       &trans &trans &trans    &kp DOT   &kp N0 &kp BSPC
                         >;
                 };
         };
